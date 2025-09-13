@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raxmatilloyev Mironshox - Modern Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <h1 class="text-2xl lg:text-4xl font-bold " style="color: rgb(68, 26, 108);">Raxmatilloyev Mironshox</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium">Men haqimda</a>
+                    <a href="#skills" class="text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium">Ko'nikmalar</a>
+                    <a href="#projects" class="text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium">Loyihalar</a>
+                    <a href="#contact" class="text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium">Bog'lanish</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg glass-dark hover:glass transition-all duration-300">
+                    <i data-lucide="menu" id="menu-icon" class="w-6 h-6 text-gray-700"></i>
+                    <i data-lucide="x" id="close-icon" class="w-6 h-6 text-gray-700 hidden"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full glass-dark border-t border-white border-opacity-20 transform -translate-y-full opacity-0 invisible transition-all duration-300">
+                <div class="px-4 py-6 space-y-4">
+                    <a href="#about" class="block text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium py-2 mobile-menu-link">Men haqimda</a>
+                    <a href="#skills" class="block text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium py-2 mobile-menu-link">Ko'nikmalar</a>
+                    <a href="#projects" class="block text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium py-2 mobile-menu-link">Loyihalar</a>
+                    <a href="#contact" class="block text-gray-700 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium py-2 mobile-menu-link">Bog'lanish</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+        <div class="particles" id="particles"></div>
+        <div class="max-w-4xl mx-auto text-center px-4 relative z-10">
+            <div class="mb-8 fade-in">
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 fade-in" style="animation-delay: 0.2s;">Raxmatilloyev Mironshox </h1>
+            <p class="text-2xl md:text-3xl mb-8 opacity-90 fade-in font-light" style="animation-delay: 0.4s;">Full Stack Dasturchi va Dastur Muhandisi</p>
+            <p class="text-lg mb-10 max-w-2xl mx-auto opacity-80 fade-in leading-relaxed" style="animation-delay: 0.6s;">
+                Zamonaviy texnologiyalar va toza kod yozish tamoyillari asosida innovatsion yechimlar 
+                yaratish va ajoyib raqamli tajribalar qurish bilan shug'ullanaman.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center fade-in" style="animation-delay: 0.8s;">
+                <a href="#projects" class="btn-modern text-white px-10 py-4 rounded-2xl font-semibold text-lg transform hover:scale-105 transition-transform">
+                    <span>Ishlarimni ko'rish</span>
+                </a>
+                <a href="#contact" class="glass text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:bg-white hover:bg-opacity-20 transition-all transform hover:scale-105">
+                    Bog'lanish
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 opacity-50"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-bold gradient-text mb-6">Men Haqimda</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <div class="relative">
+                        <img src="https://hatchcanvas.com/_/assets/ab_Y79XhZcHRBPgApSuy3BU2/keys/keys/modern-workspace?prompt=Ultra%20modern%20developer%20workspace%2C%20minimalist%20setup%2C%20multiple%20monitors%2C%20RGB%20lighting%2C%20plants%2C%20aesthetic%20coding%20environment"
+                             alt="Ish joyi" 
+                             class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900 via-transparent to-transparent rounded-3xl opacity-20"></div>
+                    </div>
+                </div>
+                <div class="fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="text-4xl font-bold gradient-text mb-8">Salom, men Mironshoxman!</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                        Men full-stack dasturlash bo'yicha tajribaga ega bo'lgan ishtiyoqli dasturchi. 
+                        Murakkab muammolarni kod orqali oddiy va chiroyli yechimlarga aylantirishni yaxshi ko'raman.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+                        Zamonaviy veb texnologiyalar bo'yicha tajriba bilan, men foydalanuvchilarga 
+                        ajoyib tajriba taqdim etadigan kengaytiriladigan va saqlanadigan ilovalar yaratishga e'tibor qarataman.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center p-6 glass-dark rounded-2xl card-hover">
+                            <div class="text-4xl font-bold gradient-text mb-3">1+</div>
+                            <div class="text-gray-700 font-medium">Yillik Tajriba</div>
+                        </div>
+                        <div class="text-center p-6 glass-dark rounded-2xl card-hover">
+                            <div class="text-4xl font-bold gradient-text mb-3">10+</div>
+                            <div class="text-gray-700 font-medium">Tugallangan Loyihalar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gradient-to-br from-purple-100 to-blue-100 relative">
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-bold gradient-text mb-6">Texnik Ko'nikmalar</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="glass-dark p-10 rounded-3xl card-hover fade-in">
+                    <h3 class="text-3xl font-bold gradient-text mb-8">Frontend Technologies</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">React.js</span>
+                                <span class="gradient-text font-semibold">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">JavaScript </span>
+                                <span class="gradient-text font-semibold">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">HTML</span>
+                                <span class="gradient-text font-semibold">100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">Css</span>
+                                <span class="gradient-text font-semibold">100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-dark p-10 rounded-3xl card-hover fade-in" style="animation-delay: 0.2s;">
+                    <h3 class="text-3xl font-bold gradient-text mb-8">Backend Technologies</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">Node.js</span>
+                                <span class="gradient-text font-semibold">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">Express</span>
+                                <span class="gradient-text font-semibold">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-3">
+                                <span class="text-gray-800 font-medium text-lg">MongoDB</span>
+                                <span class="gradient-text font-semibold">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16">
+                <div class="glass-dark p-10 rounded-3xl card-hover fade-in" style="animation-delay: 0.4s;">
+                    <h3 class="text-3xl font-bold gradient-text mb-8 text-center">Vositalar va DevOps</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div class="p-6 glass rounded-2xl card-hover">
+                            <div class="text-4xl mb-4">🐙</div>
+                            <div class="text-gray-800 font-semibold text-lg" style="min-width: 50px;">Git / GitHub</div>
+                        </div>
+                        <div class="p-6 glass rounded-2xl card-hover">
+                            <div class="text-4xl mb-4">🐳</div>
+                            <div class="text-gray-800 font-semibold text-lg" style="min-width: 50px;">Docker</div>
+                        </div>
+                        <div class="p-6 glass rounded-2xl card-hover">
+                            <div class="text-4xl mb-4">💻</div>
+                            <div class="text-gray-800 font-semibold text-lg" style="min-width: 50px;">Qoder</div>
+                        </div>
+                        <div class="p-6 glass rounded-2xl card-hover">
+                            <div class="text-4xl mb-4">🤖</div>
+                            <div class="text-gray-800 font-semibold text-lg" style="min-width: 50px;">ChatGPT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 opacity-50"></div>
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-bold gradient-text mb-6">Asosiy Loyihalar</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="glass-dark rounded-3xl overflow-hidden card-hover fade-in">
+                    <div class="relative">
+                        <img src="https://hatchcanvas.com/_/assets/ab_b0JzCkLRe1n9_pBhmdM8r/keys/yKnx6LT1b8fVyUuUdtZDW?width=768&height=768" 
+                             alt="E-commerce loyiha" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold gradient-text mb-4">Tabriklar Sayti</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Html, Css, Node.js, JavaScript va MongoDB asosida ishlab chiqilgan zamonaviy veb-sayt.</p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">Html</span>
+                            <span class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium">Css</span>
+                            <span class="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-medium">Node.js</span>
+                            <span class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-2 rounded-full text-sm font-medium">MongoDB</span>
+                            <span class="bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-6">
+                           <a href="https://github.com/mironshoxraxmatilloyev-dotcom" target="_blank" 
+   class="text-gray-600 hover:text-gray-800 font-semibold text-lg transition-all">
+  GitHub
+</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-dark rounded-3xl overflow-hidden card-hover fade-in" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="https://hatchcanvas.com/_/assets/ab_b0JzCkLRe1n9_pBhmdM8r/keys/Ej-wXyz0PCQO3v5zhQNPH?width=768&height=768" 
+                             alt="Vazifa ilovasi" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold gradient-text mb-4">Bozor.uz Sayti</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Html, Css, Node.js va MongoDB texnologiyalari asosida yaratilgan zamonaviy veb-sayt.</p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="bg-gradient-to-r from-purple-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">Html</span>
+                            <span class="bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-medium">Css</span>
+                            <span class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">Node.js</span>
+                            <span class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium">MongoDB</span>
+                        </div>
+                        <div class="flex space-x-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-dark rounded-3xl overflow-hidden card-hover fade-in" style="animation-delay: 0.4s;">
+                    <div class="relative">
+                        <img src="keys/weather-dashboard-modern?prompt=Futuristic%20weather%20dashboard%2C%20data%20visualization%2C%20charts%2C%20modern%20UI%2C%20gradient%20background" 
+                             alt="Ob-havo paneli" 
+                             class="w-full h-56 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold gradient-text mb-4">Ob-havo Paneli</h3>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Interaktiv ob-havo paneli real vaqt ma'lumotlari va grafik ko'rsatkichlar bilan.</p>
+                        <div class="flex flex-wrap gap-3 mb-6">
+                            <span class="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
+                            <span class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium">API</span>
+                        </div>
+                        <div class="flex space-x-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-gray-900 to-purple-900 text-white relative overflow-hidden">
+        <div class="particles" id="particles-contact"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20 fade-in">
+                <h2 class="text-5xl font-bold mb-6">Bog'lanish</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+                <p class="text-xl text-gray-300 mt-6">Keling, birga ajoyib loyihalar yarataylik!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="fade-in">
+                    <h3 class="text-3xl font-bold mb-8">Men bilan bog'laning</h3>
+                    <div class="space-y-6"  style="transform: translateY(-20px);">
+                        <div class="flex items-center p-4 glass rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-6">
+                                <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-lg">mironshoxraxmatilloyev@
+                                gmail.com</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mr-6">
+                                <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-lg">+998 77 252 86 88</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-6">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-lg">Buxoro, O'zbekiston</span>
+                        </div>
+                        <div class="flex items-center p-4 glass rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mr-6">
+<i data-lucide="github" class="w-7 h-7 text-white"></i>
+                            </div>
+                            <span class="text-lg">mironshoxraxmatilloyev-dotcom</span>
+                        </div>
+                                               <div class="flex items-center p-4 glass rounded-2xl">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mr-6">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="white" width="20" height="20">
+    <path d="M120,0C53.73,0,0,53.73,0,120s53.73,120,120,120s120-53.73,120-120S186.27,0,120,0z 
+             M176.93,82.62l-21.2,100.09c-1.6,7.23-5.84,9.01-11.84,5.62l-32.68-24.1l-15.77,15.2
+             c-1.74,1.74-3.2,3.2-6.55,3.2l2.34-33.4l60.84-54.97c2.64-2.34-0.57-3.64-4.09-1.3
+             l-75.25,47.42l-32.42-10.15c-7.05-2.21-7.23-7.05,1.45-10.43l126.87-48.9
+             C174.01,68.06,179.65,72.35,176.93,82.62z"/>
+  </svg>
+                            </div>
+                            <span class="text-lg">Raxmatilloyev_Mironshox</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in" style="animation-delay: 0.3s;">
+                    <form id="contact-form" class="space-y-6 glass p-8 rounded-3xl">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Ism</label>
+                            <input type="text" name="name" required class="w-full px-6 py-4 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-300" placeholder="Ismingizni kiriting">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Email</label>
+                            <input type="email" name="email" required class="w-full px-6 py-4 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-300" placeholder="Email manzilingiz">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-3">Xabar</label>
+                            <textarea rows="5" name="message" required class="w-full px-6 py-4 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-white placeholder-gray-300 resize-none" placeholder="Xabaringizni yozing..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-modern text-white py-4 px-8 rounded-2xl font-semibold text-lg transform hover:scale-105 transition-all">
+                            <span>Telegram'ga Yuborish</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-black text-white py-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-purple-900 via-transparent to-transparent opacity-20"></div>
+        <div class="max-w-6xl mx-auto px-4 text-center relative z-10">
+            <div class="mb-12 fade-in">
+                <h3 class="text-4xl font-bold gradient-text mb-6">Mironshox Raxmatilloyev</h3>
+                <p class="text-xl text-gray-300">Full Stack Dasturchi va Dastur Muhandisi</p>
+            </div>
+            <div class="flex justify-center space-x-8 mb-12 fade-in" style="animation-delay: 0.2s;">
+                
+                <a href="https://github.com/mironshoxraxmatilloyev-dotcom" class="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                    <i data-lucide="github" class="w-7 h-7 text-white"></i>
+                </a>
+<a href="https://t.me/Raxmatilloyev_Mironshox" target="_blank"
+   class="w-14 h-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+   aria-label="Telegram">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="white" width="20" height="20">
+    <path d="M120,0C53.73,0,0,53.73,0,120s53.73,120,120,120s120-53.73,120-120S186.27,0,120,0z 
+             M176.93,82.62l-21.2,100.09c-1.6,7.23-5.84,9.01-11.84,5.62l-32.68-24.1l-15.77,15.2
+             c-1.74,1.74-3.2,3.2-6.55,3.2l2.34-33.4l60.84-54.97c2.64-2.34-0.57-3.64-4.09-1.3
+             l-75.25,47.42l-32.42-10.15c-7.05-2.21-7.23-7.05,1.45-10.43l126.87-48.9
+             C174.01,68.06,179.65,72.35,176.93,82.62z"/>
+  </svg>
+</a>
+
+            </div>
+            <div class="border-t border-gray-700 pt-12 fade-in" style="animation-delay: 0.4s;">
+                <p class="text-gray-300 text-lg mb-3">&copy; 2024 Mironshox Raxmatilloyev. Barcha huquqlar himoyalangan.</p>
+                <p class="text-gray-400">Ishtiyoq va zamonaviy veb texnologiyalar bilan qurilgan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
